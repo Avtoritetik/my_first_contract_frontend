@@ -10,8 +10,8 @@ function App() {
     contract_address,
     contract_balance,
     counter_value,
-    recent_sender,
-    owner_address,
+    //recent_sender,
+    //owner_address,
     sendIncrement,
     sendDeposit,
     sendWithdrawalRequest,
@@ -34,12 +34,6 @@ function App() {
 
           <b>Our contract Address</b>
           <div className='Hint'>{contract_address?.slice(0, 30) + "..."}</div>
-
-          <b>Recent sender address</b>
-          <div className='Hint'> {recent_sender?.toString()}</div>
-
-          <b>Owner address</b>
-          <div className='Hint'> {owner_address?.toString()}</div>
 
           <b>Our contract Balance</b><br />
           {contract_balance && (
